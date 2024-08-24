@@ -2,32 +2,221 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    overflow-x: hidden;
+}
+.landing_content{
+    text-transform: capitalize;
+    margin: 10px;
+    margin-top: 48px;
+}
+.landing_content h1{
+    font-size: 40px;
+    font-weight: bolder;
+    
+}
+.landing_content p{
+    font-size: 13px;
+    color: gray;
+}
+.phone_icon{
+    padding: 10px;
+    border: 1px solid #1376F8;
+    border-radius: 10px;
+    color: #1376F8;
+    background-color: #E6F6FE;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.call>p{
+    margin: 3px;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.doc_card{
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px #80808042;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.doc-pic{
+    background-image: url(../../public/images/Frame\ 1171274922.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.info{
+    background-color: #E6F6FE;
+}
+.phone_input{
+    padding: 8px;
+    /* background-color: antiquewhite; */
+    border: 1px solid;
+    border-radius: none;
+    border-right: none;
+    margin-right: -10px;
+    color: gainsboro;
+    border-radius: 5px;
+}
+.phone_input input,.phone_input2 input{
+    outline: none;
+}
+.check{
+    background-color: green;
+    padding: 1px 2px;
+    color: white;
+    border-radius: 50%;
+}
+.why_us{
+    background-color: #E6F6FE;
+    padding: 20px;
+    margin: 30px;
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000003b;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+.layer a{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+}
+.layer a svg{
+    font-size: 70px;
+}
+.doctor_card .doc_name{
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    padding: 20px;
+    background-image: linear-gradient(to right, #25B4F8 , #25b5f870);
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+    width: 80%;
+    height: 25%;
+}
+.linkedin{
+    top: 5%;
+    right: 5%;
+    cursor: pointer;
+}
+.linkedin svg{
+    font-size: 30px;
+}
+.article_card{
+    padding: 10px;
+    background-color: #E6F6FE;
+    border-radius: 15px;
+    gap: 5px;
+    position: relative;
+    
+}
+.btn2{
+    padding: 10px 12px;
+    background-color: black;
+    color: white;
+    width: fit-content;
+    border-radius: 10px;
+    cursor: default;
+}
+.article_card a{
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    text-decoration: underline;
+}
+.view_all{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+}
+.accordion_summary div{
+    font-weight: bold;
+    display: flex!important;
+    justify-content: space-between!important;
+}
+.beforefooter{
+    background-color: #011632;
+    align-items: center;
+    border-radius: 20px;
+}
+.questions{
+    background-color: #E6F6FE;
+    padding: 50px;
+    border-radius: 10px;
+}
+.form{
+    background-color: white;
+    border-radius: 5px;
+}
+.form form{
+    width: 100%;
+    align-items: center;
+}
+.form input{
+    border: 1px solid rgba(0, 0, 0, 0.281);
+    height: 35px;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+.contact_card svg{
+    font-size: 50px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+}
+.contact_card{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.iframe iframe{
+    height: 260px;
+    border: 3px solid rgba(0, 0, 255, 0.573);
+    border-radius: 10px;
+}
+.place-card-large{
+    display: none!important;
+}
+.sign_google{
+    padding: 10px;
+    border: 1px solid gray;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.phone_input2{
+    padding: 8px;
+    /* background-color: antiquewhite; */
+    border: 1px solid;
+    margin-right: -10px;
+    color: gainsboro;
+    border-radius: 5px;
+}
+.or::before {
+    content: "";
+    width: 47%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.or::after {
+    content: "";
+    width: 47%;
+    height: 1px;
+    background-color: black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
 }

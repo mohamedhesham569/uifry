@@ -1,0 +1,45 @@
+.nav{
+    background-color: #E6F6FE;
+    border-radius: 5px;
+}
+.btn{
+    padding: 10px 15px;
+    background-color: #1376F8;
+    color: white;
+    border-radius: 10px;
+    text-transform: capitalize;
+    cursor: pointer;  
+}
+.menu_open,.menu_closed{
+    text-transform: capitalize;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: bold;
+    left: 0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    background-color: antiquewhite;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 20px;
+    color: black;
+    background-color: #dcf0fa;
+    transition: all 0.5s; 
+    z-index: 100;
+}
+.menu_closed{
+    left: 100%;
+    
+}
+.close_icon{
+    width: fit-content;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 20px;
+    color: red;
+    cursor: pointer;
+}

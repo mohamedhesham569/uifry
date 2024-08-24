@@ -1,113 +1,207 @@
-import Image from "next/image";
+"use client";
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import doc from "../../public/images/Ellipse 3 (3).png"
+import doc2 from "../../public/images/doc2.png"
+import doc3 from "../../public/images/Rectangle 631.png"
+import Image from 'next/image';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InfoCard from '@/components/infoCard/InfoCard';
+import tooth from "../../public/images/tooth-solid.svg"
+import teeth from "../../public/images/teeth-solid.svg"
+import teethopen from "../../public/images/teeth-open-solid.svg";
+import patient from "../../public/images/Rectangle 656.png"
+import CheckIcon from '@mui/icons-material/Check';
+import smile from "../../public/images/Mask group.png"
+import WatchVedio from '@/components/watchvedio/WatchVedio';
+import DoctorCard from '@/components/doctorCard/DoctorCard';
+import rating from "../../public/images/Group 346.png"
+import user1 from "../../public/images/Ellipse 3 (1).png"
+import user2 from "../../public/images/Ellipse 3 (2).png"
+import user3 from "../../public/images/Ellipse 3.png"
+import Articles from '@/components/articles/Articles';
+import Questios from '@/components/questions/Questions';
+import BeforeFooter from '@/components/beforefooter/BeforeFooter';
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <>
+        <section className='sm:flex sm:justify-around'>
+          <div className="landing_content p-4 sm:p-1 sm:w-1/2 w-full">
+            <h1 className="my-6 ">get ready for your best ever dental experirnce</h1>
+            <p className='my-8'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <div className="flex gap-3 items-center">
+              <div className="items-center"><button type="button" className="btn">book an appointment</button></div>
+              
+              <div className="flex gap-2 items-center">
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+                <div className="phone_icon"><PhoneEnabledIcon/></div>
+              
+                <div className="call">     
+                  <p style={{color: "#1376F8"}}>Dental 24H Emergency
+                  </p>
+                  <p>0900-78601</p>
+                </div>
+              </div>
+            </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+            <div className="my-6 mx-3 doc_card w-8/12">
+              <div className="flex justify-between p-3  items-center">
+                <div className="flex gap-2 ">
+                  <Image src={doc} alt='doctor pic'/>
+                  <div>
+                    <h5>Thomas daniel</h5>
+                    <p>Sr Dental</p>
+                  </div>
+                  
+                </div>
+                <LinkedInIcon style={{color: "#1376F8"}}/>
+              </div>
+              <p className='m-4'>Top Quailty dental treatment done by field experts, Highly Recommended for everyone</p>
+            </div>
+          </div>
+          <div className="sm:w-1/3 doc-pic">
+              <Image src={doc2} alt='doctor-pic' style={{    margin: "50px 0px 0px -49px;"}}/>
+          </div>
+        </section>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <section className="info hidden sm:flex gap-3 p-8 my-5 mx-10">
+          <InfoCard icon={tooth} header="Root Canal Treatment" content="Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth." />
+          <InfoCard icon={teeth} header="Cosmetic Dentist" content="Cosmetic dentistry is the branch of dentistry that focuses on improving the appearance of your smile." />
+          <InfoCard icon={teethopen} header="Dental Implants" content="A dental implant is an artificial tooth root that’s placed into your jaw to hold a prosthetic tooth or bridge." />
+        </section>
+        <section className="info sm:hidden flex gap-3 p-8 my-5 mx-10">
+          <InfoCard icon={tooth} header="Root Canal Treatment" content="Root canal treatment (endodontics) is a dental procedure used to treat infection at the centre of a tooth." />
+        </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+
+        <section className='sm:flex sm:justify-around my-10'>
+          <div className="landing_content items-center flex flex-col sm:block p-4 sm:p-1 sm:w-1/2 w-full">
+            <h1 className="my-6 ">We’re welcoming new patients and can’t wait to meet you.</h1>
+            <p className='my-8'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+            <div className=" flex">
+              <div className="phone_input">
+                <PhoneEnabledIcon/>
+              <input type="text" placeholder='Enter your Phone Number'/>
+              </div>
+              
+              <button type="button" className='btn'>submit</button>
+            </div>
+          </div>
+          <div className="sm:w-1/3 p-4">
+              <Image src={patient} alt='doctor-pic' />
+          </div>
+        </section>
+
+
+        <section className='sm:flex sm:justify-around sm:my-10 why_us'>
+        <div className="sm:w-1/3 p-4">
+              <Image src={doc3} alt='doctor-pic' />
+          </div>
+          <div className="landing_content items-center flex flex-col sm:block p-4 sm:p-1 sm:w-1/2 w-full">
+            <h1 className="sm:my-6 ">Why choose Smile for all your dental treatments?</h1>
+            <p className='my-8'>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+            <div className=" flex gap-2 m-3 w-5/6 sm:w-fit justify-btween">
+              <div className="check"><CheckIcon/></div>
+              <span>Top quality dental team</span>
+            </div>
+            <div className="m-3 flex gap-2 w-5/6 sm:w-fit justify-btween">
+              <div className="check"><CheckIcon/></div>
+              <span>State of the art dental services</span>
+            </div>
+            <div className="m-3 flex gap-2 w-5/6 sm:w-fit justify-btween">
+              <div className="check"><CheckIcon/></div>
+              <span>Discount on all dental treatment</span>
+            </div>
+            <div className="m-3 flex gap-2 w-5/6 sm:w-fit justify-btween">
+              <div className="check"><CheckIcon/></div>
+              <span>Enrollment is quick and easy</span>
+            </div>
+              <Link href="/contact" aria-label='link to book appointment'><button type="button" className='btn m-4'>Book an appointment</button></Link>
+            
+          </div>
+          
+        </section>
+
+        <section className='sm:flex sm:justify-around my-10'>
+          <div className="landing_content items-center flex flex-col sm:block p-4 sm:p-1 sm:w-1/2 w-full">
+            <h1 className="my-6 ">Leave your worries at the door and enjoy a healthier, more precise smile</h1>
+            <p className='my-8'>We use only the best quality materials on the market in order to provide the best products to our patients, So don’t worry about anything and book yourself.</p>
+              
+              <Link href="/contact" aria-label='link to book appointment'><button type="button" className='btn m-4'>Book an appointment</button></Link>
+          </div>
+          <div className="sm:w-1/3 p-4 flex justify-center">
+              <Image src={smile} alt='doctor-pic' />
+          </div>
+        </section>
+
+        <section>
+          <WatchVedio/>
+        </section>
+
+        <section>
+          <DoctorCard/>
+        </section>
+
+        <section>
+        <div className="landing_content items-center flex flex-col  p-4 sm:p-1 w-full">
+            <h1 className="my-6 mb-1">Our Happy Clients</h1>
+            <p className='my-8'>We use only the best quality materials on the market in order to provide the best products to our patients.</p>
+            <div className="flex flex-col sm:flex-row p-8 mx-8">
+            <div className="my-6 mx-3 doc_card w-fitt">
+              <div className="flex justify-between p-3  items-center">
+                <div className="flex gap-2 ">
+                  <Image src={user1} alt='doctor pic'/>
+                  <div>
+                    <h5>Alena Alex</h5>
+                    <p><Image src={rating} alt='rating' /></p>
+                  </div>
+                  
+                </div>
+              </div>
+              <p className='m-4'>Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+            </div>
+            <div className="my-6 mx-3 sm:block doc_card w-fitt">
+              <div className="flex justify-between p-3  items-center">
+                <div className="flex gap-2 ">
+                  <Image src={user2} alt='doctor pic'/>
+                  <div>
+                    <h5> Thomas daniel</h5>
+                    <p><Image src={rating} alt='rating' /></p>
+                  </div>
+                  
+                </div>
+              </div>
+              <p className='m-4'>Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+            </div>
+            <div className="my-6 mx-3 hidden sm:block doc_card w-fitt">
+              <div className="flex justify-between p-3  items-center">
+                <div className="flex gap-2 ">
+                  <Image src={user3} alt='doctor pic'/>
+                  <div>
+                    <h5>Thomas Edison</h5>
+                    <p><Image src={rating} alt='rating' /></p>
+                  </div>
+                  
+                </div>
+              </div>
+              <p className='m-4'>Phosfluorescently synergize covalent outsourcing through functional strategic theme areas. Assertively scale strategic portals without distinctive relationships. Holisticly cultivate tactical e-services before fully researched sources.</p>
+            </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <Articles/>
+        </section>
+        {/* <section>
+          <Questios/>
+        </section> */}
+        <section className='mt-20'>
+          <BeforeFooter/>
+        </section>
+    </>
   );
 }

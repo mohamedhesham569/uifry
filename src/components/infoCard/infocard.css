@@ -1,0 +1,12 @@
+.info_card_icon{
+    width: 60px;
+    background-color: #E6F6FE;
+    color: transparent;
+    padding: 10px 12px;
+    border-radius: 50%;
+}
+.info_card{
+    background-color: white;
+    text-align: center;
+    border-radius: 10px;
+}
