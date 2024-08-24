@@ -62,6 +62,7 @@ body{
     padding: 1px 2px;
     color: white;
     border-radius: 50%;
+    height: fit-content;
 }
 .why_us{
     background-color: #E6F6FE;
